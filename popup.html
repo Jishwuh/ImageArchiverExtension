@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Image Archiver</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+
+<body>
+  <header>
+    <h1>Image Archiver</h1>
+    <div class="actions">
+      <button id="downloadZipBtn">Download ZIP</button>
+      <button id="clearBtn">Clear Archive</button>
+    </div>
+  </header>
+  <main>
+    <div id="emptyState" class="empty">No images yet. Right-click an image and choose “Add to archive”.</div>
+    <ul id="list" class="list"></ul>
+  </main>
+  <footer><small>Saved images are stored locally on this device.</small></footer>
+  <script src="popup.js"></script>
+</body>
+
+</html>

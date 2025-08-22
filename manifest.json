@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Image Archiver",
+  "version": "1.2.0",
+  "description": "Right-click images to add to an archive, view them in the popup, and download all as a ZIP. Ensures PNG/JPG and macOS-compatible ZIPs.",
+  "permissions": [
+    "contextMenus",
+    "storage",
+    "downloads"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Image Archiver",
+    "default_popup": "popup.html"
+  }
+}
